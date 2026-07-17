@@ -15,6 +15,7 @@ def docs(session: nox.Session) -> None:
 
     session.install("-e.[docs]")
     session.chdir("docs")
+    
 
     session.run(
         "sphinx-build",
